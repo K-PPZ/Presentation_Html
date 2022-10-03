@@ -40,15 +40,50 @@
             <caption>Titre du tableau</caption>
             <!-- La balise caption sert à mettre un titre à votre tableau. -->
 
-            <thead> <!-- La balise thead sert à mettre le titre de vos colonnes. -->
-                
-                <tr> <!-- La balise tr sert à faire une colonnes horizontal-->
-                    <th>AGE</th>
+            <thead> <!-- La balise thead est le header de votre tableau. -->
+
+                <tr> <!-- La balise tr sert à faire une colonnes horizontal. -->
+                    <th>AGE</th> <!-- La balise th sert à mettre un texte en gras et titre de colonnes. -->
                     <th>PRENOM</th>
                     <th>NOM</th>
                 </tr>
             </thead>
+
+            <tbody> <!--La balise tbody est le corps de votre tableau. -->
+                <td>14</td> <!-- La balise td sert à mettre un texte sans propriete css il est utilsé pour mettre les donnés-->
+                <td>Enzo</td>
+                <td>Kemmas</td>
+            </tbody>
+
+            <tfoot> <!-- La balise tfoot est le footer de tableau pour signifier la fin du tableau-->
+                <td>16</td>
+                <td>Korèn</td>
+                <td>Papazian</td>
+            </tfoot>
         </table>
+
+        <form action="" method="get"> <!-- La balise form représente un formulaire, qui contient des contrôles interactifs permettant à un utilisateur de fournir des informations. -->
+
+            <label for="age">quel est votre age</label> <!-- La balise label sert à mettre un texte et la lié un input via l'attribut for="" dans le for il faut mettre l'id du input. -->
+
+            <input type="texte" name="Age" id="age"> <!-- La balise input sert à crée une saisie, le type attribut sert à savoir le type ici c'est texte, Le name attribut est le nom du formulaire. Il doit être unique parmi tous les formulaires d'un document, et ne doit pas être une chaîne de caractères vide. -->
+
+            <input type="submit", value="Sousmettre"> <!-- Le submit crée un bouton qui sert à envoyer toute les valeurs qui ont été saisie dans la balise form et le value sert à donner une valeur au bouton. -->
+
+        </form>
+
+        <textarea name="story" id="story" cols="30" rows="10">
+            Il était une fois...
+        </textarea>  <!-- Les attributs rows et cols permettent de définir la taille exacte que le textarea doit occupée, name permet de nommer la donnée qui sera envoyée au serveur lors de l'envoi du formulaire. -->
+
+        <label for="animaux">Choissis un animal</label>
+        
+        <select name="animaux" id="animaux"> <!-- La balise select sert à crée un bouton avec des options. -->
+            <option value="">--choissis un animal--</option>
+            <option value="chien">chien</option> <!-- La balise option créer un choix. -->
+            <option value="chat">chat</option>
+            <option value="loup">loup</option>
+        </select>
 
         <img src="dossierImage/nomImage" alt="#">
         <!-- La balise img sert a integrer une image. -->
